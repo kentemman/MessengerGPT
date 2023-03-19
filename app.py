@@ -36,4 +36,7 @@ def fbwebhook():
         pass
     return '200 OK HTTPS.'
 if __name__ =='__main__':
-    app.run()
+
+    # Run the Flask app
+
+    app.run(host='0.0.0.0', debug=False, port=5000)
