@@ -11,6 +11,14 @@ PAGE_ACCESS_TOKEN = 'PAGE_TOKEN'
 # This is API key for facebook messenger.
 API="https://graph.facebook.com/v13.0/me/messages?access_token="+PAGE_ACCESS_TOKEN
 
+@app.route('/', methods=['GET'])
+def verify():
+    # Verify the webhook subscription with Facebook Messenger
+    if request.args.get("hub.mode") == "subscribe" and request.args.get("hub.challenge"):
+        if not request.args.get("hub.verify_token") == "pogiako":
+            return "Verification token missmatch", 403
+        return request.args['hub.challenge'], 200
+    return "Hello world", 200
 
 @app.route("/", methods=['POST'])
 def fbwebhook():
@@ -36,5 +44,5 @@ def fbwebhook():
         pass
     return '200 OK HTTPS.'
   # Run the Flask app
-if __name__ =='__main__':
-app.run(host='0.0.0.0', debug=False, port=5000)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=os.environ.get('PORT', 5000))
