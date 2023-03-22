@@ -9,7 +9,7 @@ openai.api_key = os.environ.get("OPENAI_API_KEY")
 # This is page access token that you get from facebook developer console.
 PAGE_ACCESS_TOKEN = os.environ.get("PAGE_TOKEN")
 # This is API key for facebook messenger.
-API="https://graph.facebook.com/v16.0/me/messages?access_token="+PAGE_ACCESS_TOKEN
+API="https://graph.facebook.com/v16.0/me/messages?access_token={PAGE_ACCESS_TOKEN}"
 
 @app.route('/', methods=['GET'])
 def verify():
