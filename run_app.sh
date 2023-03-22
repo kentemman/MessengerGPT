@@ -39,6 +39,9 @@ echo "OPEN_AI_API: $OPEN_AI_API"
 
 echo "PAGE_TOKEN: $PAGE_TOKEN"
 
+#ngrok
+ngrok
+
 # Run app.py
 
 python3 app.py
