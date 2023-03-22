@@ -26,7 +26,7 @@ read openai_api_key
 
 # Replace OPEN_AI_API value in app.py with new value
 
-export OPEN_AI_API=$open_ai_api
+export OPEN_AI_API=$open_api_key
 
 printenv
 
