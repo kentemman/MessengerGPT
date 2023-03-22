@@ -2,7 +2,11 @@
 
 # Update Ubuntu
 sudo apt-get update
-sudo apt-get upgrade
+
+#Download files
+wget https://raw.githubusercontent.com/Kentemman/MessengerGPT/main/app.py
+wget https://raw.githubusercontent.com/Kentemman/MessengerGPT/main/requirements.txt
+
 
 # Install pip
 sudo apt-get install python3-pip
