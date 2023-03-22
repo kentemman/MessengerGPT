@@ -50,6 +50,11 @@ echo "PAGE_TOKEN: $PAGE_TOKEN"
 
 #ngrok
 ngrok
+echo "Please enter your Ngrok Token:"
+read ngrok_token
+
+ngrok authtoken $ngrok_token
+
 
 # Run app.py
 
