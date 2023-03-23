@@ -64,7 +64,7 @@ Before getting started, you'll need:
 
 
 ## Modified the `nano app.py` if the api is not working
-- Change the OPEN_AI_API to your api
-- Change the PAGE_TOKEN to your page token
+- Change the `OPEN_AI_API` to your api
+- Change the `PAGE_TOKEN` to your page token
 
 That's it! You now have a Facebook Messenger chatbot that uses OpenAI GPT-3 to generate responses. You can customize the chatbot's behavior by modifying the code in app.py.
