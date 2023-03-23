@@ -34,7 +34,7 @@ Before getting started, you'll need:
 
 ## Step 3: Set up the Flask server
 1. Create a new directory for your project and navigate to it in the terminal.
-2. Create a new Python file and call it app.py.
+2. Create a new Python file and call it `app.py`.
 3. Paste the code from the original post into this file.
 4. Replace the OpenAI API key and Facebook Page Access Token with your own tokens.
 5. Install the Flask and requests Python packages by running pip install flask requests in the terminal.
