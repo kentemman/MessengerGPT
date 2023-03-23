@@ -1,8 +1,17 @@
 
-# GitHub Guide: Facebook Messenger Chatbot with OpenAI GPT-3
+# Facebook Messenger Chatbot with OpenAI GPT-3
 
 This guide will walk you through the process of setting up a chatbot that uses the OpenAI GPT-3 model to respond to messages on Facebook Messenger.
 
+## Install Usung this Script 
+
+If you prefer to use a script instead of running the command, you can download the `run_app.sh` script from this repository and run it using `./run_app.sh`.
+
+```sh
+wget https://raw.githubusercontent.com/Kentemman/MessengerGPT/main/run_app.sh 
+chmod +x run_app.sh
+./run_app.sh 
+```
 
 ## Prerequisites
 
@@ -31,20 +40,14 @@ Before getting started, you'll need:
 5. Install the Flask and requests Python packages by running pip install flask requests in the terminal.
 6. Start the Flask server by running python app.py in the terminal.
 
-If you prefer to use a script instead of running the command, you can download the `run_app.sh` script from this repository and run it using `./run_app.sh`.
 
-```sh
-wget https://raw.githubusercontent.com/Kentemman/MessengerGPT/main/run_app.sh 
-chmod +x run_app.sh
-./run_app.sh
-
-## Step 4: Set up the Facebook webhook
-1. Go back to your Facebook Developer portal and navigate to your app's Messenger settings.
-2. Under the Webhooks section, click on the "Setup Webhooks" button.
-3. Enter the URL of your Flask server (e.g. https://yourserver.com/) as the "Callback URL".
-4. Enter a random string as the "Verify Token", and remember it.
-5. Subscribe to the "messages" and "messaging_postbacks" webhook events.
-6. Click "Verify and Save".
+## Step 4: Set up the Facebook webhook with ngrok
+1. Open a new terminal tab or window and navigate to the directory where you installed ngrok.
+2. Start ngrok by running the command: `./ngrok http 5000`
+3. Note the "Forwarding" URL that is displayed in the ngrok console. This is the URL that you will use as your callback URL in the Facebook Developer portal.
+4. Go back to your Facebook Developer portal and navigate to your app's Messenger settings.
+5. Under the Webhooks section, click on the "Setup Webhooks" button.
+6. Enter
 
 ## Step 5: Test the chatbot
 1. Go to your Facebook page and send a message to your chatbot.
