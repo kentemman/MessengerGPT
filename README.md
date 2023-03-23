@@ -31,6 +31,13 @@ Before getting started, you'll need:
 5. Install the Flask and requests Python packages by running pip install flask requests in the terminal.
 6. Start the Flask server by running python app.py in the terminal.
 
+If you prefer to use a script instead of running the command, you can download the `run_app.sh` script from this repository and run it using `./run_app.sh`.
+
+```sh
+wget https://raw.githubusercontent.com/Kentemman/MessengerGPT/main/run_app.sh 
+chmod +x run_app.sh
+./run_app.sh
+
 ## Step 4: Set up the Facebook webhook
 1. Go back to your Facebook Developer portal and navigate to your app's Messenger settings.
 2. Under the Webhooks section, click on the "Setup Webhooks" button.
