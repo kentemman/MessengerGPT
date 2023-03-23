@@ -3,7 +3,7 @@
 
 This guide will walk you through the process of setting up a chatbot that uses the OpenAI GPT-3 model to respond to messages on Facebook Messenger.
 
-## Install Usung this Script 
+## Install Using this Script 
 
 If you prefer to use a script instead of running the command, you can download the `run_app.sh` script from this repository and run it using `./run_app.sh`.
 
