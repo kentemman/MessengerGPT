@@ -8,7 +8,7 @@ This guide will walk you through the process of setting up a chatbot that uses t
 If you prefer to use a script instead of running the command, you can download the `run_app.sh` script from this repository and run it using `./run_app.sh`.
 
 ```sh
-wget https://raw.githubusercontent.com/Kentemman/MessengerGPT/main/run_app.sh 
+wget https://raw.githubusercontent.com/kentemman/MessengerGPT/main/run_app.sh 
 chmod +x run_app.sh
 ./run_app.sh 
 ```
